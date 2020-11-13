@@ -1,3 +1,6 @@
 # hotel-chatbot
 
-#Simple chatbot for resturant
+# Simple chatbot for resturant
+
+# FLOW:
+
