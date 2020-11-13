@@ -1,0 +1,97 @@
+version: "2.0"
+
+stories:
+
+
+- story: book_room_one_simple
+  steps:
+  - intent: book_room
+  - action: utter_ask_no_of_room
+  - intent: one_room
+  - action: utter_ask_type_of_room
+  - intent: simple_room
+  - action: utter_choose_one_simple_room
+
+- story: book_room_two_simple
+  steps:
+  - intent: book_room
+  - action: utter_ask_no_of_room
+  - intent: two_room
+  - action: utter_ask_type_of_room
+  - intent: simple_room
+  - action: utter_choose_two_simple_room
+
+- story: book_room_one_delux
+  steps:
+  - intent: book_room
+  - action: utter_ask_no_of_room
+  - intent: one_room
+  - action: utter_ask_type_of_room
+  - intent: delux_room
+  - action: utter_choose_one_delux_room
+
+- story: book_room_two_delux
+  steps:
+  - intent: book_room
+  - action: utter_ask_no_of_room
+  - intent: two_room
+  - action: utter_ask_type_of_room
+  - intent: delux_room
+  - action: utter_choose_two_delux_room
+
+
+- story: clean_right_away
+  steps:
+  - intent: room_clean
+  - action: utter_room_clean
+  - intent: instant_room_clean
+  - action: utter_instant_someone
+
+- story: clean_relative
+  steps:
+  - intent: room_clean
+  - action: utter_room_clean
+  - intent: relative_room_clean
+  - action: utter_relative_someone
+
+- story: check_in_timing
+  steps:
+  - intent: check_in_timing
+  - action: utter_check_in_timing
+
+- story: check_out_timing
+  steps:
+  - intent: check_out_timing
+  - action: utter_check_out_timing
+
+- story: cancel_reservation
+  steps:
+  - intent: cancel_reservation
+  - action: utter_cancel_reservation
+  - action: utter_cancel_reservation_extends
+
+- story: cancellation_policy
+  steps:
+  - intent: cancellation_policy
+  - action: utter_cancellation_policy
+
+- story: resturant_check
+  steps:
+  - intent: resturant_check
+  - action: utter_resturant_check
+
+- story: breakfast_avail
+  steps:
+  - intent: breakfast_avail
+  - action: utter_breakfast_avail
+
+- story: breakfast_timing
+  steps: 
+  - intent: breakfast_timing
+  - action: utter_breakfast_timing
+
+- story: resturant_timing
+  steps:
+  - intent: resturant_timing
+  - action: utter_resturant_timing
+

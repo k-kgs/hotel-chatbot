@@ -1,0 +1,119 @@
+version: "2.0"
+
+nlu:
+- intent: book_room
+  examples: |
+    - I want to book a room
+    - book a room
+    - I want a room
+    - I need a room
+    - I want to book room
+
+- intent: one_room
+  examples: |
+    - one room
+    - 1 room
+    - a room
+
+- intent: two_room
+  examples: |
+    - two room
+    - 2 room
+    - require two room
+
+- intent: simple_room
+  examples: |
+    - simple
+    - simple room
+    - normal room
+
+- intent: delux_room
+  examples: |
+    - delux
+    - delux room
+    - luxury room
+
+
+- intent: room_clean
+  examples: |
+    - I want to have my room cleaned
+    - I want my room neat and clean
+    - Please clean my room
+    - clean my room
+
+- intent: instant_room_clean
+  examples: |
+    - Could you send someone right now?
+    - right now
+    - I want it right now
+    - clean it now
+    - now right now
+
+- intent: relative_room_clean
+  examples: |
+    - Could you send someone after 2 hours?
+    - sometime later
+    - not now
+    - in evening
+    - Could you send someone after 1 hours?
+    - Could you send someone after 3 hours?
+    - Could you send someone after 5 hours?
+
+- intent: check_in_timing
+  examples: |
+    - What are your check-in timings?
+    - check_in_timings
+    - your check-in timings?
+    - check in time
+
+- intent: check_out_timing
+  examples: |
+    - What are your check-out timings?
+    - check-out timings?
+    - check-out time
+
+- intent: cancel_reservation
+  examples: |
+    - How do I cancel a reservation?
+    - I want to cancel my reservation
+    - please cancel my reservation
+
+- intent: cancellation_policy
+  examples: |
+    - What is your cancellation policy?
+    - cancellation policy?
+    - I am not aware with cancellation policy
+    - please explain your cancellation policy
+
+- intent: resturant_check
+  examples: |
+    - Does the hotel have a restaurant?
+    - is there resturant facility
+    - show availability of resturant
+
+- intent: breakfast_avail
+  examples: |
+    - Does the hotel offer breakfast?
+    - Did I get breakfast
+    - check for breakfast
+
+- intent: breakfast_timing
+  examples: |
+    - What are the breakfast timings?
+    - when you offer breakfast
+    - breakfast time
+
+- intent: resturant_timing
+  examples: |
+    - What are the timings of your restaurant?
+    - when you open your resturant
+    - when I went to resturant
+    - resturant availability
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

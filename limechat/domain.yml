@@ -1,0 +1,92 @@
+version: "2.0"
+
+intents:
+  - book_room
+  - one_room
+  - two_room
+  - simple_room
+  - delux_room
+  - room_clean
+  - instant_room_clean
+  - relative_room_clean
+  - check_in_timing
+  - check_out_timing
+  - cancel_reservation
+  - cancellation_policy
+  - resturant_check
+  - breakfast_avail
+  - breakfast_timing
+  - resturant_timing
+  - bot_challenge
+
+responses:
+  utter_ask_no_of_room:
+  - text: "How many rooms would you like to book?"
+    buttons:
+    - title: "1 room"
+      payload: "/one_room"
+    - title: "2 rooms"
+      payload: "/two_room"
+
+  utter_ask_type_of_room:
+  - text: "What type of room would you want to book?"
+    buttons:
+    - title: "Simple"
+      payload: "/simple_room"
+    - title: "Delux"
+      payload: "/delux_room"
+
+  utter_choose_one_simple_room:
+  - text: "You have choosen to book 1 simple room"
+
+  utter_choose_two_simple_room:
+  - text: "You have choosen to book 2 simple rooms"
+
+  utter_choose_one_delux_room:
+  - text: "You have choosen to book 1 delux room"
+
+  utter_choose_two_delux_room:
+  - text: "You have choosen to book 2 delux room"
+
+  utter_room_clean:
+  - text: "When should I arrange for a cleaning?"
+
+  utter_instant_someone:
+  - text: "Sure, I will send someone to your room right away"
+
+  utter_relative_someone:
+  - text: "Sure, I have scheduled a cleaning for 5 pm today"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_check_in_timing:
+  - text: "Check-in time starts at 4 PM. Minimum check-in age is 21. Please contact the reception for early check-in requests"
+
+  utter_check_out_timing:
+  - text: "Check-out time is 11 AM. Please contact the reception for late checkout requests."
+
+  utter_cancel_reservation:
+  - text: "To cancel a reservation, select the “Reservations” link from the homepage."
+
+  utter_cancel_reservation_extends:
+  - text: "On the Reservations page, under the heading ‘View, Change or Cancel a Reservation,’ enter your confirmation number, and either the last name on the reservation or the last four digits of the credit card used to make the reservation."
+
+  utter_cancellation_policy:
+  - text: "The booking deposit is refundable if the cancellation occurs at least 15 days before arrival. For cancellations made after this limit, a penalty will be imposed based on the cancellation policy."
+
+  utter_resturant_check:
+  - text: "Yes, the hotel has a restaurant called the Zephyr Bar. With our menu we strive to reflect the historic art and the spirit of our neighborhood by offering a glimpse into what makes our area unique."
+
+  utter_breakfast_avail:
+  - text: "The hotel provides its guests with a free made-to-order breakfast each morning."
+
+  utter_breakfast_timing:
+  - text: "Monday through Friday breakfast is 6 am to 9 am. On Saturday and Sunday, we are open from 7 am to 10:30 am."
+
+  utter_resturant_timing:
+  - text: "Our restaurant serves a dazzling 24-hour menu."
+
+session_config:
+  session_expiration_time: 100
+  carry_over_slots_to_new_session: true
