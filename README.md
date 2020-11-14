@@ -3,7 +3,7 @@
 # Simple chatbot for resturant
 
 # FLOW:
-- ** Book Room
+**-  Book Room
 - ** Clean room
 - ** FAQs
 
